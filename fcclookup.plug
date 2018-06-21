@@ -1,5 +1,5 @@
 [Core]
-Name = FCC License Search
+Name = FCCLicenseSearch
 Module = fcclookup
 
 [Python]
