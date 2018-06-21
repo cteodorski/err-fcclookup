@@ -8,7 +8,7 @@ class fcc(BotPlugin):
     """
 
     @botcmd  # flags a command
-    def  fccsearch(self, msg, args)
+    def fccsearch(self, msg, args)
         """
         Execute to check if Errbot responds to command.
         Feel free to tweak me to experiment with Errbot.
