@@ -1,9 +1,9 @@
 [Core]
-Name = Example
-Module = example
+Name = FCC License Lookup
+Module = fccLicenseLookup
 
 [Documentation]
-Description = This is a simple plugin example to get you started.
+Description = This is a simple plugin to look up FCC licenses. 
 
 [Python]
 Version = 2+
