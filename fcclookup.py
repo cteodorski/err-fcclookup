@@ -18,7 +18,6 @@ class fcc(BotPlugin):
         api = "http://data.fcc.gov/api/license-view/basicSearch/getLicenses?searchValue="
         url = api + args + "&format=json"
         print(url)
-        results = requests.get(url)
-        json_data = json.loads(results.text)
-        pprint.pprint(json_data)
+        #results = requests.get(url)
+        #json_data = json.loads(results.text)
         return 'It *works* !'
