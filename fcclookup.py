@@ -1,5 +1,5 @@
 from errbot import BotPlugin, botcmd
-
+import requests
 
 class fcc(BotPlugin):
     """
@@ -8,11 +8,10 @@ class fcc(BotPlugin):
 
     @botcmd  # flags a command
     def fccsearch(self, msg, args):  # a command callable with !tryme
-        print(args)
+
 
         """
-        Execute to check if Errbot responds to command.
-        Feel free to tweak me to experiment with Errbot.
-        You can find me in your init directory in the subdirectory plugins.
+        Use !fccsearch <callsign> to search the FCC ULS database
         """
+
         return 'It *works* !'  # This string format is markdown.
