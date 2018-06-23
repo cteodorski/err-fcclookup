@@ -1,6 +1,7 @@
 from errbot import BotPlugin, botcmd
 import requests
 import pprint
+import json
 
 class fcc(BotPlugin):
     """
@@ -19,8 +20,8 @@ class fcc(BotPlugin):
         print(url)
 
         results = requests.get(url)
-        records = results.json()['results']
-        name = records["Licenses"]["License"]["licName"]
+        json_data = json.loads(results.txt)
+        name = json_data["Licenses"]["License"]["licName"]
         print(name)
 
 
