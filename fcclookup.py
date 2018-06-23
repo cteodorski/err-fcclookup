@@ -1,5 +1,6 @@
 from errbot import BotPlugin, botcmd
 import requests
+import pprint
 
 class fcc(BotPlugin):
     """
@@ -16,5 +17,6 @@ class fcc(BotPlugin):
         api = "http://data.fcc.gov/api/license-view/basicSearch/getLicenses?searchValue="
         url = api + args
 
-        print(url)
+        reponse = requests.get(url)
+        pprint.pprint(response)
         return 'It *works* !'  # This string format is markdown.
