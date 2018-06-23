@@ -21,4 +21,6 @@ class fcc(BotPlugin):
         results = requests.get(url)
         json_data = results.json()
         pprint.pprint(json_data)
+        license = json_data[0]
+        pprint.pprint(license)
         return 'It *works* !'
