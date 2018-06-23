@@ -19,7 +19,7 @@ class fcc(BotPlugin):
         print(url)
 
         results = requests.get(url)
-        name = results.json()[results]
-        print(results['licName'])
+        name = results.json()['results']
+        print(name['licName'])
 
         return 'It *works* !'  # This string format is markdown.
