@@ -22,5 +22,6 @@ class fcc(BotPlugin):
         json_data = results.json()
         pprint.pprint(json_data)
         for i in json_data['Licenses']:
-            pprint.pprint(i)
+            for license in i['License']:
+                pprint.pprint(license)
         return 'It *works* !'
