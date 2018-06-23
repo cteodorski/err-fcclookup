@@ -3,13 +3,13 @@ from errbot import BotPlugin, botcmd
 
 class fcc(BotPlugin):
     """
-    This is a very basic plugin to try out your new installation and get you started.
-    Feel free to tweak me to experiment with Errbot.
-    You can find me in your init directory in the subdirectory plugins.
+    This is a very basic plugin to search the FCC ULS database
     """
 
     @botcmd  # flags a command
     def fccsearch(self, msg, args):  # a command callable with !tryme
+        print(msg)
+
         """
         Execute to check if Errbot responds to command.
         Feel free to tweak me to experiment with Errbot.
