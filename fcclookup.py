@@ -20,7 +20,7 @@ class fcc(BotPlugin):
         print(url)
 
         results = requests.get(url)
-        json_data = json.loads(results.txt)
+        json_data = json.loads(results.text)
         name = json_data["Licenses"]["License"]["licName"]
         print(name)
 
