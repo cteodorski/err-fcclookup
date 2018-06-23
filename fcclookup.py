@@ -21,5 +21,5 @@ class fcc(BotPlugin):
         results = requests.get(url)
         json_data = json.loads(results.text)
         for i in json_data:
-            print(i[0][1])
+            print(i[0][0])
         return 'It *works* !'
