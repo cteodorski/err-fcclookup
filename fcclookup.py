@@ -21,9 +21,9 @@ class fcc(BotPlugin):
 
         results = requests.get(url)
         json_data = json.loads(results.text)
-        pprint.pprint(json_data)
         for i in json_data:
-            pprint.pprint(i)
+            for license in i;
+                pprint.pprint(license)
 
 
         return 'It *works* !'  # This string format is markdown.
