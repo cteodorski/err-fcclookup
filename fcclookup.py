@@ -16,8 +16,8 @@ class fcc(BotPlugin):
         Use !fccsearch <callsign> to search the FCC ULS database
         """
         api = "http://data.fcc.gov/api/license-view/basicSearch/getLicenses?searchValue="
-        #url = api + args + "&format=json"
-        #print(url)
-        #results = requests.get(url)
-        #json_data = json.loads(results.text)
+        url = api + args + "&format=json"
+        print(url)
+        results = requests.get(url)
+        json_data = json.loads(results.text)
         return 'It *works* !'
