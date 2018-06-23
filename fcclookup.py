@@ -18,5 +18,5 @@ class fcc(BotPlugin):
         url = api + args
 
         results = requests.get(url)
-        pprint.pprint(results)
+        pprint.pprint(results.json())
         return 'It *works* !'  # This string format is markdown.
