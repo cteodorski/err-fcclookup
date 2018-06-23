@@ -22,7 +22,7 @@ class fcc(BotPlugin):
         results = requests.get(url)
         json_data = json.loads(results.text)
         pprint.pprint(json_data)
-        #name = json_data["Licenses"]["License"]["licName"]
+        name = json_data['Licenses']['License']['licName']
         print(name)
 
 
