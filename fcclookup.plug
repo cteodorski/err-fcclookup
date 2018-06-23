@@ -3,7 +3,7 @@ Name = FCCLicenseSearch
 Module = fcclookup
 
 [Python]
-Version = 3
+Version = 2+
 
 [Documentation]
 Description = FCC License search plugin
