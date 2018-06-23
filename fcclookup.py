@@ -19,7 +19,7 @@ class fcc(BotPlugin):
         url = api + args + "&format=json"
         print(url)
         results = requests.get(url)
-        json_data = json.loads(results.text)
+        json_data = json.loads(results)
         for i in json_data:
             print(i[0][0])
         return 'It *works* !'
