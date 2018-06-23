@@ -1,7 +1,7 @@
 from errbot import BotPlugin, botcmd
 
 
-class Example(BotPlugin):
+class fcc(BotPlugin):
     """
     This is a very basic plugin to try out your new installation and get you started.
     Feel free to tweak me to experiment with Errbot.
@@ -9,7 +9,7 @@ class Example(BotPlugin):
     """
 
     @botcmd  # flags a command
-    def tryme(self, msg, args):  # a command callable with !tryme
+    def fccsearch(self, msg, args):  # a command callable with !tryme
         """
         Execute to check if Errbot responds to command.
         Feel free to tweak me to experiment with Errbot.
