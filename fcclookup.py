@@ -20,4 +20,5 @@ class fcc(BotPlugin):
         print(url)
         results = requests.get(url)
         json_data = json.loads(results.text)
+        pprint.pprint(json_data)
         return 'It *works* !'
