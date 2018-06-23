@@ -1,7 +1,7 @@
 from errbot import BotPlugin, botcmd
 
 
-class fcc(BotPlugin):
+class fcclookup(BotPlugin):
 
     @botcmd  # flags a command
     def fccsearch(self, msg, args):
