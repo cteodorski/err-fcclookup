@@ -19,7 +19,7 @@ class fcc(BotPlugin):
         print(url)
 
         results = requests.get(url)
-        records = results.json()
+        records = results.json()['results']
         name = records["Licenses"]["License"]["licName"]
         print(name)
 
