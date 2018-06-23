@@ -19,6 +19,6 @@ class fcc(BotPlugin):
         url = api + args + "&format=json"
         print(url)
         results = requests.get(url)
-        json_data = json.loads(results.json())
+        json_data = results.json()
         pprint.pprint(json_data)
         return 'It *works* !'
