@@ -20,4 +20,7 @@ class fcc(BotPlugin):
         print(url)
         results = requests.get(url)
         json_data = json.loads(results.text)
+        for i in json_data:
+            for license in i:
+                pprint.pprint(license)
         return 'It *works* !'
