@@ -22,8 +22,9 @@ class fcc(BotPlugin):
         results = requests.get(url)
         json_data = json.loads(results.text)
         pprint.pprint(json_data)
-        name = json_data['Licenses']['License']['licName']
-        print(name)
+        for i in json_data:
+            name = ['licName']
+            print(name)
 
 
         return 'It *works* !'  # This string format is markdown.
