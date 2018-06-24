@@ -22,5 +22,5 @@ class fcc(BotPlugin):
         json_data = results.json()
         pprint.pprint(json_data)
         for i in json_data['Licenses']['License']:
-            info = {"name":['licName'],"FCC URL":i['licDetailURL']}
+            info = {"name":i['licName'],"FCC URL":i['licDetailURL']}
         return info
